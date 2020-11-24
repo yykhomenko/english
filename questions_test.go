@@ -9,12 +9,12 @@ func TestIsQuestion(t *testing.T) {
 	}{
 		{"", false},
 		{"do", false},
-		{"What do you do", true},
+		{"What do you do", false},
 		{"How match?", true},
 	}
 	for _, test := range tests {
 		if got := IsQuestion(test.str); got != test.want {
-			t.Errorf("IsQuestion(%q) = %t, want %t",test.str, got, test.want)
+			t.Errorf("IsQuestion(%q) = %t, want %t", test.str, got, test.want)
 		}
 	}
 }
