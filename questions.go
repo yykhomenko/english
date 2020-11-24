@@ -2,19 +2,19 @@ package english
 
 import "strings"
 
-var qPrefixes = []string{
-	"what",
-	"who",
-	"where",
-	"when",
-	"why",
-	"how",
+var questions = map[string][]string{
+	"what":  {"что", "какой"},
+	"who":   {"кто"},
+	"where": {"где", "куда"},
+	"when":  {"когда"},
+	"why":   {"почему", "зачем"},
+	"how":   {"как"},
 }
 
 func IsQuestion(s string) bool {
 	s = strings.ToLower(s)
-	for _, p := range qPrefixes {
-		if strings.HasPrefix(s, p) &&
+	for q := range questions {
+		if strings.HasPrefix(s, q) &&
 			strings.HasSuffix(s, "?") {
 			return true
 		}
