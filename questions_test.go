@@ -11,6 +11,7 @@ func TestIsQuestion(t *testing.T) {
 		{"do", false},
 		{"What do you do", false},
 		{"How match?", true},
+		{"Are you finish?", true},
 	}
 	for _, test := range tests {
 		if got := IsQuestion(test.str); got != test.want {
