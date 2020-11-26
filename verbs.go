@@ -1,5 +1,22 @@
 package english
 
+// глагол "быть"
+var verbsToBe = map[string][]string{
+	"will": {"i", "you", "we", "they", "he", "she", "it"},
+	"am":   {"i"},
+	"is":   {"he", "she", "it"},
+	"are":  {"you", "we", "they"},
+	"was":  {"i", "he", "she", "it"},
+	"were": {"you", "we", "they"},
+}
+
+// глагол "делать"
+var verbsDo = map[string][]string{
+	"do":   {"i", "you", "we", "they"},
+	"does": {"he", "she", "it"},
+	"did":  {"i", "you", "we", "they", "he", "she", "it"},
+}
+
 // правильные глаголы
 var verbsRegular = map[string][]string{
 	"love":   {"любить"},
@@ -25,21 +42,6 @@ var verbsIrregular = map[string][]string{
 	"give":  {"gave", "давать"},
 	"take":  {"took", "брать"},
 	"speak": {"spoke", "говорить"},
-}
-
-// глагол "делать"
-var verbsDo = map[string][]string{
-	"do":   {"i", "you", "we", "they"},
-	"does": {"he", "she", "it"},
-	"did":  {"i", "you", "we", "they", "he", "she", "it"},
-}
-
-// глагол "быть"
-var verbsToBe = map[string][]string{
-	"will": {"i", "you", "we", "they", "he", "she", "it"},
-	"am":   {"i"},
-	"is":   {"he", "she", "it"},
-	"are":  {"you", "we", "they"},
-	"was":  {"i", "he", "she", "it"},
-	"were": {"you", "we", "they"},
+	"read":  {"read", "читать"}, // [riːd] [red]
+	"write": {"wrote", "писать"},
 }
