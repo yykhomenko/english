@@ -26,3 +26,19 @@ var irregularVerbs = map[string][]string{
 	"take":  {"took", "брать"},
 	"speak": {"spoke", "говорить"},
 }
+
+var do = map[string][]string{
+	"will": {"i", "you", "we", "they", "he", "she", "it"},
+	"do":   {"i", "you", "we", "they"},
+	"does": {"he", "she", "it"},
+	"did":  {"i", "you", "we", "they", "he", "she", "it"},
+}
+
+var toBe = map[string][]string{
+	"will": {"i", "you", "we", "they", "he", "she", "it"},
+	"am":   {"i"},
+	"is":   {"he", "she", "it"},
+	"are":  {"you", "we", "they"},
+	"was":  {"i", "he", "she", "it"},
+	"were": {"you", "we", "they"},
+}
