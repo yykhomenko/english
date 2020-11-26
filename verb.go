@@ -8,6 +8,8 @@ var regularVerbs = map[string][]string{
 	"close":  {"закрывать"},
 	"start":  {"начинать"},
 	"finish": {"заканчивать"},
+	"ask":    {"просить", "спрашивать"},
+	"answer": {"отвечать"},
 }
 
 var irregularVerbs = map[string][]string{
@@ -15,4 +17,6 @@ var irregularVerbs = map[string][]string{
 	"come": {"came", "приходить"},
 	"go":   {"went", "идти"},
 	"know": {"knew", "знать"},
+	"give": {"gave", "давать"},
+	"take": {"took", "брать"},
 }
