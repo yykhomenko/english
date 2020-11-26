@@ -10,13 +10,17 @@ var regularVerbs = map[string][]string{
 	"finish": {"заканчивать"},
 	"ask":    {"просить", "спрашивать"},
 	"answer": {"отвечать"},
+	"help":   {"помогать"},
+	"like":   {"нравится"},
+	"want":   {"хотеть"},
 }
 
 var irregularVerbs = map[string][]string{
-	"see":  {"saw", "видеть"},
-	"come": {"came", "приходить"},
-	"go":   {"went", "идти"},
-	"know": {"knew", "знать"},
-	"give": {"gave", "давать"},
-	"take": {"took", "брать"},
+	"see":   {"saw", "видеть"},
+	"come":  {"came", "приходить"},
+	"go":    {"went", "идти"},
+	"know":  {"knew", "знать"},
+	"give":  {"gave", "давать"},
+	"take":  {"took", "брать"},
+	"speak": {"spoke", "говорить"},
 }
