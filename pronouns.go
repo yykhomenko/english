@@ -1,5 +1,6 @@
 package english
 
+// местоимения "кто?"
 var pronounsWho = map[string][]string{
 	"i":    {"я"},
 	"you":  {"вы"},
@@ -9,6 +10,7 @@ var pronounsWho = map[string][]string{
 	"they": {"они"},
 }
 
+// местоимения "кого?"
 var pronounsWhom = map[string][]string{
 	"me":   {"меня"},
 	"you":  {"вас"},
@@ -18,6 +20,7 @@ var pronounsWhom = map[string][]string{
 	"them": {"их"},
 }
 
+// местоимения "чье?"
 var pronounsWhose = map[string][]string{
 	"my":    {"мое"},
 	"your":  {"ваше"},

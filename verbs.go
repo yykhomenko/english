@@ -27,6 +27,7 @@ var irregularVerbs = map[string][]string{
 	"speak": {"spoke", "говорить"},
 }
 
+// глагол "делать"
 var do = map[string][]string{
 	"will": {"i", "you", "we", "they", "he", "she", "it"},
 	"do":   {"i", "you", "we", "they"},
@@ -34,6 +35,7 @@ var do = map[string][]string{
 	"did":  {"i", "you", "we", "they", "he", "she", "it"},
 }
 
+// глагол "быть"
 var toBe = map[string][]string{
 	"will": {"i", "you", "we", "they", "he", "she", "it"},
 	"am":   {"i"},

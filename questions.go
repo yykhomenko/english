@@ -2,6 +2,7 @@ package english
 
 import "strings"
 
+// вопросы
 var questions = map[string][]string{
 	"what":  {"что", "какой"},
 	"who":   {"кто"},
