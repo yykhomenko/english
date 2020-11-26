@@ -1,7 +1,7 @@
 package english
 
 // правильные глаголы
-var regularVerbs = map[string][]string{
+var verbsRegular = map[string][]string{
 	"love":   {"любить"},
 	"live":   {"жить"},
 	"work":   {"работать"},
@@ -17,7 +17,7 @@ var regularVerbs = map[string][]string{
 }
 
 // неправильные глаголы
-var irregularVerbs = map[string][]string{
+var verbsIrregular = map[string][]string{
 	"see":   {"saw", "видеть"},
 	"come":  {"came", "приходить"},
 	"go":    {"went", "идти"},
@@ -28,15 +28,14 @@ var irregularVerbs = map[string][]string{
 }
 
 // глагол "делать"
-var do = map[string][]string{
-	"will": {"i", "you", "we", "they", "he", "she", "it"},
+var verbsDo = map[string][]string{
 	"do":   {"i", "you", "we", "they"},
 	"does": {"he", "she", "it"},
 	"did":  {"i", "you", "we", "they", "he", "she", "it"},
 }
 
 // глагол "быть"
-var toBe = map[string][]string{
+var verbsToBe = map[string][]string{
 	"will": {"i", "you", "we", "they", "he", "she", "it"},
 	"am":   {"i"},
 	"is":   {"he", "she", "it"},

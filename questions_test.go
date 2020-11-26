@@ -8,8 +8,8 @@ func TestIsQuestion(t *testing.T) {
 		want bool
 	}{
 		{"", false},
-		{"do", false},
-		{"What do you do", false},
+		{"verbsDo", false},
+		{"What verbsDo you verbsDo", false},
 		{"How match?", true},
 		{"Are you finish?", true},
 	}

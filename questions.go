@@ -22,14 +22,14 @@ func IsQuestion(s string) bool {
 		}
 	}
 
-	for q := range do {
+	for q := range verbsDo {
 		if strings.HasPrefix(s, q) &&
 			strings.HasSuffix(s, "?") {
 			return true
 		}
 	}
 
-	for q := range toBe {
+	for q := range verbsToBe {
 		if strings.HasPrefix(s, q) &&
 			strings.HasSuffix(s, "?") {
 			return true
