@@ -1,5 +1,6 @@
 package english
 
+// правильные глаголы
 var regularVerbs = map[string][]string{
 	"love":   {"любить"},
 	"live":   {"жить"},
@@ -15,6 +16,7 @@ var regularVerbs = map[string][]string{
 	"want":   {"хотеть"},
 }
 
+// неправильные глаголы
 var irregularVerbs = map[string][]string{
 	"see":   {"saw", "видеть"},
 	"come":  {"came", "приходить"},
